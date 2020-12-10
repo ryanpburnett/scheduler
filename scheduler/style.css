@@ -16,6 +16,10 @@ body {
   border: 3px solid black;
 }
 
+.filler {
+  color: lightgray
+}
+
 textarea{
   background: transparent;
   border: none;
