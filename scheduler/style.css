@@ -12,6 +12,10 @@ body {
   
 }
 
+.boxStyle {
+  border: 3px solid black;
+}
+
 textarea{
   background: transparent;
   border: none;
