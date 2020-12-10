@@ -6,10 +6,23 @@ function date () {
 }
 date()
 
-var currentTime = console.log(current_time = moment().format("HH:mm"))
+var currentTime = current_time = moment().format("HH:mm")
 
+var currentTimeNumber = parseInt(currentTime)
 
+console.log(currentTimeNumber)
 function setColor(element, color) {
   element.style.backgroundColor = color;
 }
+
+
+
+if ( 9 < currentTimeNumber) {
+  $("#nine").addClass("past")
+}else if(9 > currentTimeNumber){
+  $("#nine").addClass("future")
+}else{
+  $("#nine").addClass("present")
+}
+
 
