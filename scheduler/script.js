@@ -16,7 +16,7 @@ function setColor(element, color) {
 }
 
 
-
+// 9:00
 if ( 9 < currentTimeNumber) {
   $("#nine").addClass("past")
 }else if(9 > currentTimeNumber){
@@ -25,4 +25,11 @@ if ( 9 < currentTimeNumber) {
   $("#nine").addClass("present")
 }
 
+localStorage.setItem('appt9', 'null');
+
+function appt() {
+  localStorage.setItem('appt9', document.getElementById("textNine").value);
+}
+
+document.getElementById("nineSave").addEventListener("click", appt)
 
